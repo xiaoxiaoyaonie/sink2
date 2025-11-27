@@ -27,7 +27,7 @@ export default defineNuxtConfig({
     cfApiToken: '',
     dataset: 'sink',
     aiModel: '@cf/meta/llama-3.1-8b-instruct',
-    aiPrompt: `You are a URL shortening assistant, please shorten the URL provided by the user into a SLUG. The SLUG information must come from the URL itself, do not make any assumptions. A SLUG is human-readable and should not exceed three words and can be validated using regular expressions {slugRegex} . Only the best one is returned, the format must be JSON reference {"slug": "example-slug"}`,
+    aiPrompt:'',
     caseSensitive: false,
     listQueryLimit: 500,
     disableBotAccessLog: false,
@@ -65,7 +65,7 @@ export default defineNuxtConfig({
       production: 'runtime',
       meta: {
         title: 'Sink API',
-        description: 'A Simple / Speedy / Secure Link Shortener with Analytics, 100% run on Cloudflare.',
+        description: '',
       },
       route: '/_docs/openapi.json',
       ui: {
