@@ -11,6 +11,6 @@ export default defineAppConfig({
   previewTTL: 300, // 5 minutes
   slugRegex: /^[a-z0-9]+(?:-[a-z0-9]+)*$/i,
   reserveSlug: [
-    'dashboard',
+    '登录',
   ],
 })
